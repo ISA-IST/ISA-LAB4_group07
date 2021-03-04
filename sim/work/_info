@@ -1,0 +1,89 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB3/ISA-LAB3_group07/RISCV_abs/tb_abs
+vadder
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1614783345
+!i10b 1
+!s100 H7d8jO?PX;[5KJRee@O570
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I@o_Ao;TJ7a^bN]jNgoWHh2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z3 d/home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/sim
+w1579274956
+8/home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/adder.sv
+F/home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/adder.sv
+!i122 3
+L0 1 6
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1614783345.000000
+!s107 /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/adder.sv|
+!i113 1
+Z5 o-work work -sv
+Z6 tCvgOpt 0
+vDUT
+R0
+Z7 !s110 1614784005
+!i10b 1
+!s100 DbF[[c@6[aHIK:IEEJIZa2
+R1
+IX?J0fR5JC18oHYAaKn;ao1
+R2
+Z8 !s105 top_sv_unit
+S1
+R3
+w1579275305
+8../src/DUT.sv
+F../src/DUT.sv
+!i122 6
+L0 1 39
+R4
+r1
+!s85 0
+31
+Z9 !s108 1614784005.000000
+!s107 ../tb/packet_in.sv|../src/DUT.sv|../src/dut_if.sv|../src/adder.sv|/home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/top.sv|
+Z10 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/top.sv|
+!i113 1
+R5
+R6
+n@d@u@t
+Ydut_if
+R0
+R7
+!i10b 1
+!s100 UDYnN_I90ANTACSeOKZa40
+R1
+IWU2Wk[Ga?IdSMmQD_;[mN1
+R2
+R8
+S1
+R3
+w1579274967
+8../src/dut_if.sv
+F../src/dut_if.sv
+!i122 6
+L0 1 0
+R4
+r1
+!s85 0
+31
+R9
+Z11 !s107 ../tb/packet_in.sv|../src/DUT.sv|../src/dut_if.sv|../src/adder.sv|/home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/top.sv|
+R10
+!i113 1
+R5
+R6
