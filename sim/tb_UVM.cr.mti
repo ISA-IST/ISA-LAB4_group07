@@ -1,51 +1,111 @@
-/home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/adder.sv {1 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/adder.sv
+{/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/agent_out.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/agent_out.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/agent_out.sv(1): near "uvm_agent": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/adder.sv {1 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/adder.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module adder
 
 Top level modules:
 	adder
 
-} {} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/sequencer.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/sequencer.sv
+} {} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/packet_out.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/packet_out.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/packet_out.sv(1): near "uvm_sequence_item": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/monitor_out.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/monitor_out.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/monitor_out.sv(1): near "uvm_monitor": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/agent.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/agent.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/agent.sv(1): near "uvm_agent": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/sequencer.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/sequencer.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 ** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/sequencer.sv(1): near "uvm_sequencer": syntax error, unexpected IDENTIFIER.
 ** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/sequencer.sv(1): Error in class extension specification.
 
-} {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/agent_out.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/agent_out.sv
+} {3.0 5.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/monitor.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/monitor.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/monitor.sv(1): near "uvm_monitor": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/env.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/env.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/env.sv(1): near "uvm_env": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/agent_out.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/agent_out.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 ** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/agent_out.sv(1): near "uvm_agent": syntax error, unexpected IDENTIFIER.
 ** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/agent_out.sv(1): Error in class extension specification.
-
-} {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/DUT.sv {1 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/DUT.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module DUT
-
-Top level modules:
-	DUT
-
-} {} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_out.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_out.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_out.sv(1): near "uvm_sequence_item": syntax error, unexpected IDENTIFIER.
-** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_out.sv(1): Error in class extension specification.
-
-} {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor_out.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor_out.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor_out.sv(1): near "uvm_monitor": syntax error, unexpected IDENTIFIER.
-** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor_out.sv(1): Error in class extension specification.
 
 } {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/agent.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/agent.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 ** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/agent.sv(1): near "uvm_agent": syntax error, unexpected IDENTIFIER.
 ** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/agent.sv(1): Error in class extension specification.
 
-} {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor.sv
+} {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor_out.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor_out.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor_out.sv(1): near "uvm_monitor": syntax error, unexpected IDENTIFIER.
+** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor_out.sv(1): Error in class extension specification.
+
+} {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_out.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_out.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_out.sv(1): near "uvm_sequence_item": syntax error, unexpected IDENTIFIER.
+** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_out.sv(1): Error in class extension specification.
+
+} {3.0 5.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/top.sv} {2 {vlog -work work -vopt -sv -stats=none {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/top.sv}
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+** Note: (vlog-2286) /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/top.sv(2): Using implicit +incdir+/software/mentor/questa10.7c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package top_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Warning: ../tb/monitor.sv(49): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+** Warning: ../tb/monitor_out.sv(48): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+-- Compiling module adder
+-- Compiling interface dut_if
+-- Compiling module DUT
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/driver_out.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/driver_out.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/driver_out.sv(3): near "uvm_driver": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/DUT.sv {1 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/DUT.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DUT
+
+Top level modules:
+	DUT
+
+} {} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 ** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor.sv(1): near "uvm_monitor": syntax error, unexpected IDENTIFIER.
 ** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/monitor.sv(1): Error in class extension specification.
 
-} {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/env.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/env.sv
+} {3.0 5.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/driver.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/driver.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/driver.sv(3): near "uvm_driver": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/env.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/env.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 ** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/env.sv(1): near "uvm_env": syntax error, unexpected IDENTIFIER.
 ** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/env.sv(1): Error in class extension specification.
+
+} {3.0 5.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/refmod.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/refmod.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/refmod.sv(1): near "uvm_component": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/packet_in.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/packet_in.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/packet_in.sv(1): near "uvm_sequence_item": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver_out.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver_out.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver_out.sv(3): near "uvm_driver": syntax error, unexpected IDENTIFIER.
+** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver_out.sv(3): Error in class extension specification.
 
 } {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/top.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/top.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -56,17 +116,22 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 ** Error: ** while parsing file included at /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/top.sv(6)
 ** at ../tb/packet_in.sv(1): Error in class extension specification.
 
-} {3.0 6.0 7.0 8.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver_out.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver_out.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver_out.sv(3): near "uvm_driver": syntax error, unexpected IDENTIFIER.
-** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver_out.sv(3): Error in class extension specification.
+} {3.0 6.0 7.0 8.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/sequence_in.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/sequence_in.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/sequence_in.sv(1): near "uvm_sequence": syntax error, unexpected "IDENTIFIER"
 
-} {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver.sv
+} {3.0 4.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 ** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver.sv(3): near "uvm_driver": syntax error, unexpected IDENTIFIER.
 ** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/driver.sv(3): Error in class extension specification.
 
-} {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/dut_if.sv {1 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/dut_if.sv
+} {3.0 5.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/comparator.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/comparator.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/comparator.sv(1): Undefined variable: packet_out.
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/comparator.sv(1): TYPE parameter 'T' requires a type assignment.
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/comparator.sv(1): near "uvm_scoreboard": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 6.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/dut_if.sv {1 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/src/dut_if.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling interface dut_if
 
@@ -78,7 +143,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 ** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/refmod.sv(1): near "uvm_component": syntax error, unexpected IDENTIFIER.
 ** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/refmod.sv(1): Error in class extension specification.
 
-} {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_in.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_in.sv
+} {3.0 5.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/simple_test.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/simple_test.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/simple_test.sv(1): near "uvm_test": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_in.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_in.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 ** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_in.sv(1): near "uvm_sequence_item": syntax error, unexpected IDENTIFIER.
 ** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/packet_in.sv(1): Error in class extension specification.
@@ -88,7 +157,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 ** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/sequence_in.sv(1): near "uvm_sequence": syntax error, unexpected IDENTIFIER.
 ** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/sequence_in.sv(1): Error in class extension specification.
 
-} {3.0 5.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/comparator.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/comparator.sv
+} {3.0 5.0} {}} {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/sequencer.sv} {0 {vlog -work work -vopt {/home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/sequencer.sv}
+Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+** Error: /home/isa07/Desktop/untitled folder/ISA-LAB4_group07/tb/sequencer.sv(1): near "uvm_sequencer": syntax error, unexpected "IDENTIFIER"
+
+} {3.0 4.0} {}} /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/comparator.sv {0 {vlog -work work -sv -stats=none /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/comparator.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 ** Error: /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/comparator.sv(1): (vlog-2730) Undefined variable: 'packet_out'.
 ** Error: (vlog-13069) /home/mattereteo/Documenti/Politecnico/MAGISTRALE/ISA/LAB/LAB4/ISA-LAB4_group07/tb/comparator.sv(1): near "uvm_scoreboard": syntax error, unexpected IDENTIFIER.
