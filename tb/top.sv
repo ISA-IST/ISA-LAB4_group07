@@ -9,13 +9,13 @@ import uvm_pkg::*;
 `include "../tb/sequencer.sv"
 `include "../tb/driver.sv"
 `include "../tb/driver_out.sv"
-`include "../tb/monitor.sv"
+`include "../tb/monitor_FPU.sv"
 `include "../tb/monitor_out.sv"
-`include "../tb/agent.sv"
+`include "../tb/agent_FPU.sv"
 `include "../tb/agent_out.sv"
 `include "../tb/refmod.sv"
 `include "../tb/comparator.sv"
-`include "../tb/env.sv"
+`include "../tb/env_FPU.sv"
 `include "../tb/simple_test.sv"
 
 //Top
