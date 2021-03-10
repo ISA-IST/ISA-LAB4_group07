@@ -12,6 +12,6 @@ vcom -93 ../src_FPU/multiplier/fpmul_stage4_struct.vhd
 
 vcom -93 ../src_FPU/multiplier/fpmul_pipeline.vhd
 
-vlog -sv ../tb/top_FPU.sv
+vlog -sv ../tb_FPU/top_FPU.sv
 vsim top_FPU
 run 4 us
