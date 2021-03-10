@@ -11,8 +11,8 @@ class comparator #(type T = packet_out) extends uvm_scoreboard; // creazione di 
   uvm_tlm_analysis_fifo #(T, this_type) after_fifo;
 
   //alternativa
-  //  uvm_tlm_analysis_fifo #(packet_in) before_fifo;
-  //  uvm_tlm_analysis_fifo #(packet_in) after_fifo;
+  //  uvm_tlm_analysis_fifo #(packet_out) before_fifo;
+  //  uvm_tlm_analysis_fifo #(packet_out) after_fifo;
 
   typedef uvm_built_in_converter #( T ) convert;
 
@@ -62,6 +62,11 @@ if( !after_tx.compare(before_tx) ) begin
  m_matches++;
  end
 
+if(m_matches+m_mismatches > 100)
+      -> end_of_simulation;
+
+    -> compared;
+
  phase.drop_objection(this);
 
  end // forever begin
@@ -69,7 +74,7 @@ if( !after_tx.compare(before_tx) ) begin
 endtask
 
 
-  virtual task put(T t);
+/*  virtual task put(T t);
     if(!free) @compared; // '@' triggera l'azione quando compared cambia, credo come '@' posedge.
     exp.copy(t);
     free = 0;
@@ -108,5 +113,5 @@ endtask
       -> end_of_simulation;
 
     -> compared;
-  endfunction
+  endfunction */
 endclass

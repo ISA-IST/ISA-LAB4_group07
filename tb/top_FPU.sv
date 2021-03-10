@@ -13,9 +13,9 @@ import uvm_pkg::*;
 `include "../tb/monitor_out.sv"
 `include "../tb/agent.sv"
 `include "../tb/agent_out.sv"
-`include "../tb/refmod.sv"
-`include "../tb/comparator.sv"
-`include "../tb/env_FPU.sv"
+`include "../tb/refmod_fifo.sv"
+`include "../tb/comparator_fifo.sv"
+`include "../tb/env_fifo.sv"
 `include "../tb/simple_test.sv"
 
 //Top

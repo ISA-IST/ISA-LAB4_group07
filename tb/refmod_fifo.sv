@@ -5,12 +5,12 @@ class refmod extends uvm_component;
     packet_out tr_out;
     uvm_get_port #(packet_in) in;
     //uvm_put_port #(packet_out) out; // no more needed
-    uvm_analysis_port#(packet_out) analysis_port; //new
+    uvm_analysis_port #(packet_out) analysis_port; //new
 
     function new(string name = "refmod", uvm_component parent);
         super.new(name, parent);
         in = new("in", this);
-        out = new("out", this);
+        //out = new("out", this);
         analysis_port = new("analysis_port", this);
     endfunction
 
