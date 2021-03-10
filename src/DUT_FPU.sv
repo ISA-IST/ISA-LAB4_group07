@@ -1,6 +1,6 @@
-module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, output enum logic [1:0] {INITIAL,WAIT,SEND} state);
+module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, output enum logic [1:0] {INITIAL,WAIT,SEND} state);
     
-    FPmul FPU_under_test(.FP_A(in_inter.A),.FP_B(in_inter.B),.CLK(in_inter.clk),.FP_Z(out_inter.data));
+    FPmul FPU_under_test(.FP_A(in_inter.A),.FP_B(in_inter.B),.CLK(clk),.FP_Z(out_inter.data));
 
     always_ff @(posedge in_inter.clk)
     begin

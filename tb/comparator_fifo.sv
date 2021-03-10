@@ -7,8 +7,8 @@ class comparator #(type T = packet_out) extends uvm_scoreboard; // creazione di 
 //  uvm_put_imp #(T, this_type) from_refmod;
 //  uvm_analysis_imp #(T, this_type) from_dut;
 
-  uvm_tlm_analysis_fifo #(T, this_type) before_fifo;
-  uvm_tlm_analysis_fifo #(T, this_type) after_fifo;
+  uvm_tlm_analysis_fifo #(packet_out) before_fifo;
+  uvm_tlm_analysis_fifo #(packet_out) after_fifo;
 
   //alternativa
   //  uvm_tlm_analysis_fifo #(packet_out) before_fifo;
@@ -49,16 +49,18 @@ task run_phase(uvm_phase phase);     // new run_phase
 
  forever begin
  before_fifo.get(before_tx);
- ‘uvm_info("FIFO_before", $sformatf("RES=%0h", before_tx.data), UVM_MEDIUM);
+ //‘uvm_info("FIFO_before", $sformatf("RES=%0h", before_tx.data), UVM_MEDIUM);
  phase.raise_objection(this);
 
  after_fifo.get(after_tx);
- ‘uvm_info("FIFO_after", $sformatf("RES=%0h", after_tx.data), UVM_MEDIUM);
+ //‘uvm_info("FIFO_after", $sformatf("RES=%0h", after_tx.data), UVM_MEDIUM);
 
 if( !after_tx.compare(before_tx) ) begin
+ uvm_report_warning("Comparator Mismatch", "");
  m_mismatches++;
  end
  else begin
+ uvm_report_info("Comparator Match", "");
  m_matches++;
  end
 

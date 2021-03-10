@@ -1,7 +1,7 @@
 import uvm_pkg::*;
 `include "uvm_macros.svh"
 //`include "../src/adder.sv"
-`include "../src/dut_if.sv"
+`include "../src/dut_if_FPU.sv"
 `include "../src/DUT_FPU.sv"
 `include "../tb/packet_in.sv"
 `include "../tb/packet_out.sv"
@@ -37,7 +37,7 @@ module top_FPU;
   dut_if in(clk, rst);
   dut_if out(clk, rst);
   
-  DUT sum(in, out, state);
+  DUT sum(in, out, clk, state);
 
   initial begin
     `ifdef INCA
