@@ -23,8 +23,8 @@ class refmod extends uvm_component;
 
         forever begin
             in.get(tr_in);
-            A_tmp = $bitstoshortreal(tr_in.A[31], tr_in.A[30:23], tr_in.A[22:0]);
-            B_tmp = $bitstoshortreal(tr_in.B[31], tr_in.B[30:23], tr_in.B[22:0]);
+            A_tmp = $bitstoshortreal({tr_in.A[31], tr_in.A[30:23], tr_in.A[22:0]});
+            B_tmp = $bitstoshortreal({tr_in.B[31], tr_in.B[30:23], tr_in.B[22:0]});
             OUT_tmp = A_tmp * B_tmp;
             // tr_out.data[31:0] $shortrealtobits(OUT_tmp) ;
             {tr_out.data[31],tr_out.data[30:23],tr_out.data[22:0]} = $shortrealtobits(OUT_tmp);

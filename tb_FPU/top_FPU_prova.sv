@@ -18,7 +18,8 @@ import uvm_pkg::*;
 `include "../tb_FPU/comparator.sv"
 //`include "../tb_FPU/comparator_fifo_internal.sv"
 //`include "../tb_FPU/env_fifo.sv"
-`include "../tb_FPU/refmod.sv"
+//`include "../tb_FPU/refmod.sv"
+`include "../tb_FPU/refmod_shortreal.sv"
 
 `include "../tb_FPU/env.sv"
 `include "../tb_FPU/simple_test.sv"
