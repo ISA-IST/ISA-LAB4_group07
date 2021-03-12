@@ -24,7 +24,7 @@ class refmod extends uvm_component;
             in.get(tr_in);
             tr_out.data = tr_in.A * tr_in.B;
             $display("refmod: input A = %d, input B = %d, output OUT = %d",tr_in.A, tr_in.B, tr_out.data);
-			$display("refmod: input A = %b, input B = %b, output OUT = %b",tr_in.A, tr_in.B, tr_out.data);
+			      $display("refmod: input A = %b, input B = %b, output OUT = %b",tr_in.A, tr_in.B, tr_out.data);
             out.write(tr_out);
         end
     endtask: run_phase
