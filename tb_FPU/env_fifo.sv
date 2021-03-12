@@ -30,7 +30,7 @@ class env extends uvm_env;
 
         //Connect scoreboard
       //  rfm.out.connect(comp.from_refmod);
-        rfm.analysis_port.connect(comp.before_fifo.analysis_export);
+        rfm.out.connect(comp.before_fifo.analysis_export);
 
       //  slv.item_collected_port.connect(comp.from_dut);
       slv.item_collected_port.connect(comp.after_fifo.analysis_export);
