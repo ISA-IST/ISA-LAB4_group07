@@ -4,7 +4,8 @@ class comparator #(type T = packet_out) extends uvm_scoreboard; // creazione di 
 
   const static string type_name = "comparator #(T)";
 
-  uvm_put_imp #(T, this_type) from_refmod;
+ //uvm_put_imp #(T, this_type) from_refmod;
+  uvm_blocking_get_port #(T) from_refmod;
   uvm_analysis_imp #(T, this_type) from_dut;
 
 
@@ -38,7 +39,17 @@ class comparator #(type T = packet_out) extends uvm_scoreboard; // creazione di 
 
 
 
-virtual task put(T t);
+/*virtual task put(T t);
+    if(!free) @compared; // '@' triggera l'azione quando compared cambia, credo come '@' posedge.
+    exp.copy(t);
+    free = 0;
+
+    @compared;
+    free = 1;
+  endtask
+*/
+
+virtual task get(T t);
     if(!free) @compared; // '@' triggera l'azione quando compared cambia, credo come '@' posedge.
     exp.copy(t);
     free = 0;

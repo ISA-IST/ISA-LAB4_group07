@@ -4,14 +4,14 @@ class refmod extends uvm_component;
     packet_in tr_in;
     packet_out tr_out;
     uvm_get_port #(packet_in) in;
-    //uvm_put_port #(packet_out) out;
-    uvm_blocking_put_port #(packet_out) out_b; // new entry
+    uvm_put_port #(packet_out) out_b;
+    //uvm_blocking_put_port #(packet_out) out_b; // new entry
     shortreal A_tmp,B_tmp,OUT_tmp;
 
     function new(string name = "refmod", uvm_component parent);
         super.new(name, parent);
         in = new("in", this);
-        out = new("out", this);
+        out_b = new("out_b", this);
     endfunction
 
     virtual function void build_phase(uvm_phase phase);

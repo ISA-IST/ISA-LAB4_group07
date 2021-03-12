@@ -3,13 +3,13 @@ class env extends uvm_env;
     refmod      rfm;
     agent_out   slv;
     comparator #(packet_out) comp;
-    //uvm_tlm_analysis_fifo #(packet_in) to_refmod;
+    uvm_tlm_analysis_fifo #(packet_in) to_refmod;
 
     `uvm_component_utils(env)
 
     function new(string name, uvm_component parent = null);
         super.new(name, parent);
-        to_refmod = new("to_refmod", this);
+       to_refmod = new("to_refmod", this);
     endfunction
 
     virtual function void build_phase(uvm_phase phase);

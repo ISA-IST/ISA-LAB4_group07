@@ -13,9 +13,9 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading project tb_UVM_FPU
-do top_FPU.do
+do top_FPU_2fifo.do
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:17 on Mar 11,2021
+# Start time: 16:54:27 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/common/fpnormalize_fpnormalize.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -24,10 +24,10 @@ do top_FPU.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity FPnormalize
 # -- Compiling architecture FPnormalize of FPnormalize
-# End time: 18:40:17 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 16:54:28 on Mar 12,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:17 on Mar 11,2021
+# Start time: 16:54:28 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/common/fpround_fpround.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -36,10 +36,10 @@ do top_FPU.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity FPround
 # -- Compiling architecture FPround of FPround
-# End time: 18:40:18 on Mar 11,2021, Elapsed time: 0:00:01
+# End time: 16:54:28 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:18 on Mar 11,2021
+# Start time: 16:54:28 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/common/packfp_packfp.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -47,10 +47,10 @@ do top_FPU.do
 # -- Loading package std_logic_arith
 # -- Compiling entity PackFP
 # -- Compiling architecture PackFP of PackFP
-# End time: 18:40:18 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 16:54:29 on Mar 12,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:18 on Mar 11,2021
+# Start time: 16:54:29 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/common/unpackfp_unpackfp.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -58,10 +58,10 @@ do top_FPU.do
 # -- Loading package std_logic_arith
 # -- Compiling entity UnpackFP
 # -- Compiling architecture UnpackFP of UnpackFP
-# End time: 18:40:18 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 16:54:29 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:18 on Mar 11,2021
+# Start time: 16:54:29 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/common/clk_gen.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -70,10 +70,10 @@ do top_FPU.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity clk_gen
 # -- Compiling architecture beh of clk_gen
-# End time: 18:40:18 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 16:54:30 on Mar 12,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:18 on Mar 11,2021
+# Start time: 16:54:30 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/regnbit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -81,10 +81,10 @@ do top_FPU.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity regnbit
 # -- Compiling architecture behaviour of regnbit
-# End time: 18:40:18 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 16:54:30 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:18 on Mar 11,2021
+# Start time: 16:54:30 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage1_struct.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -93,10 +93,10 @@ do top_FPU.do
 # -- Compiling entity FPmul_stage1
 # -- Compiling architecture struct of FPmul_stage1
 # -- Loading entity UnpackFP
-# End time: 18:40:18 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 16:54:30 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:18 on Mar 11,2021
+# Start time: 16:54:30 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage2_struct_modified_extra_regs.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -104,10 +104,10 @@ do top_FPU.do
 # -- Loading package std_logic_arith
 # -- Compiling entity FPmul_stage2
 # -- Compiling architecture struct of FPmul_stage2
-# End time: 18:40:19 on Mar 11,2021, Elapsed time: 0:00:01
+# End time: 16:54:31 on Mar 12,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:19 on Mar 11,2021
+# Start time: 16:54:31 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage3_struct.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -118,10 +118,10 @@ do top_FPU.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Loading entity FPnormalize
 # -- Loading entity FPround
-# End time: 18:40:19 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 16:54:31 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:19 on Mar 11,2021
+# Start time: 16:54:31 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage4_struct.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -132,10 +132,10 @@ do top_FPU.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Loading entity FPnormalize
 # -- Loading entity PackFP
-# End time: 18:40:19 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 16:54:32 on Mar 12,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:19 on Mar 11,2021
+# Start time: 16:54:32 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_pipeline.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -147,13 +147,162 @@ do top_FPU.do
 # -- Loading entity FPmul_stage2
 # -- Loading entity FPmul_stage3
 # -- Loading entity FPmul_stage4
-# End time: 18:40:19 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 16:54:32 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:40:19 on Mar 11,2021
-# vlog -reportprogress 300 -sv ../tb_FPU/top_FPU.sv 
-# ** Note: (vlog-2286) ../tb_FPU/top_FPU.sv(2): Using implicit +incdir+/software/mentor/questa10.7c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
-# -- Compiling package top_FPU_sv_unit
+# Start time: 16:54:32 on Mar 12,2021
+# vlog -reportprogress 300 -sv ../tb_FPU/top_FPU_2fifo.sv 
+# ** Note: (vlog-2286) ../tb_FPU/top_FPU_2fifo.sv(2): Using implicit +incdir+/software/mentor/questa10.7c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# ** Error: ** while parsing file included at ../tb_FPU/top_FPU_2fifo.sv(18)
+# ** at ../tb_FPU/env_2fifo.sv(12): (vlog-2730) Undefined variable: 'to_refmod'.
+# End time: 16:54:34 on Mar 12,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0
+# ** Error: /software/mentor/questa10.7c/questasim/linux_x86_64/vlog failed.
+# Error in macro ./top_FPU_2fifo.do line 15
+# /software/mentor/questa10.7c/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../tb_FPU/top_FPU_2fifo.sv"
+do top_FPU_2fifo.do
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:51 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/fpnormalize_fpnormalize.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPnormalize
+# -- Compiling architecture FPnormalize of FPnormalize
+# End time: 16:55:52 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:52 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/fpround_fpround.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPround
+# -- Compiling architecture FPround of FPround
+# End time: 16:55:52 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:52 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/packfp_packfp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity PackFP
+# -- Compiling architecture PackFP of PackFP
+# End time: 16:55:53 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:53 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/unpackfp_unpackfp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity UnpackFP
+# -- Compiling architecture UnpackFP of UnpackFP
+# End time: 16:55:53 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:53 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/clk_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity clk_gen
+# -- Compiling architecture beh of clk_gen
+# End time: 16:55:53 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:53 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/regnbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity regnbit
+# -- Compiling architecture behaviour of regnbit
+# End time: 16:55:54 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:54 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage1_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage1
+# -- Compiling architecture struct of FPmul_stage1
+# -- Loading entity UnpackFP
+# End time: 16:55:54 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:54 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage2_struct_modified_extra_regs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage2
+# -- Compiling architecture struct of FPmul_stage2
+# End time: 16:55:55 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:55 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage3_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage3
+# -- Compiling architecture struct of FPmul_stage3
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity FPnormalize
+# -- Loading entity FPround
+# End time: 16:55:55 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:55 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage4_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage4
+# -- Compiling architecture struct of FPmul_stage4
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity FPnormalize
+# -- Loading entity PackFP
+# End time: 16:55:55 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:56 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_pipeline.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul
+# -- Compiling architecture pipeline of FPmul
+# -- Loading entity FPmul_stage1
+# -- Loading entity FPmul_stage2
+# -- Loading entity FPmul_stage3
+# -- Loading entity FPmul_stage4
+# End time: 16:55:56 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:55:56 on Mar 12,2021
+# vlog -reportprogress 300 -sv ../tb_FPU/top_FPU_2fifo.sv 
+# ** Note: (vlog-2286) ../tb_FPU/top_FPU_2fifo.sv(2): Using implicit +incdir+/software/mentor/questa10.7c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_FPU_2fifo_sv_unit
 # -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
 # ** Warning: ../tb_FPU/monitor.sv(49): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
 # ** Warning: ../tb_FPU/monitor_out.sv(48): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
@@ -163,16 +312,180 @@ do top_FPU.do
 # 
 # Top level modules:
 # 	top_FPU
-# End time: 18:40:21 on Mar 11,2021, Elapsed time: 0:00:02
+# End time: 16:56:00 on Mar 12,2021, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 2
 # vsim top_FPU 
-# Start time: 18:40:21 on Mar 11,2021
+# Start time: 16:56:00 on Mar 12,2021
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error (suppressible): ../tb_FPU/env_2fifo.sv(26): (vopt-7063) Failed to find 'to_refmod' in hierarchical name '$root.to_refmod.analysis_export'.
+#         Region: top_FPU_2fifo_sv_unit
+# ** Error (suppressible): ../tb_FPU/env_2fifo.sv(29): (vopt-7063) Failed to find 'to_refmod' in hierarchical name '$root.to_refmod.get_export'.
+#         Region: top_FPU_2fifo_sv_unit
+# Optimization failed
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./top_FPU_2fifo.do PAUSED at line 16
+do top_FPU_2fifo.do
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:09 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/fpnormalize_fpnormalize.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPnormalize
+# -- Compiling architecture FPnormalize of FPnormalize
+# End time: 16:57:09 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:09 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/fpround_fpround.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPround
+# -- Compiling architecture FPround of FPround
+# End time: 16:57:10 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:10 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/packfp_packfp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity PackFP
+# -- Compiling architecture PackFP of PackFP
+# End time: 16:57:10 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:10 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/unpackfp_unpackfp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity UnpackFP
+# -- Compiling architecture UnpackFP of UnpackFP
+# End time: 16:57:10 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:11 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/clk_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity clk_gen
+# -- Compiling architecture beh of clk_gen
+# End time: 16:57:11 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:11 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/regnbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity regnbit
+# -- Compiling architecture behaviour of regnbit
+# End time: 16:57:11 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:11 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage1_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage1
+# -- Compiling architecture struct of FPmul_stage1
+# -- Loading entity UnpackFP
+# End time: 16:57:12 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:12 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage2_struct_modified_extra_regs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage2
+# -- Compiling architecture struct of FPmul_stage2
+# End time: 16:57:12 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:12 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage3_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage3
+# -- Compiling architecture struct of FPmul_stage3
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity FPnormalize
+# -- Loading entity FPround
+# End time: 16:57:13 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:13 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage4_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage4
+# -- Compiling architecture struct of FPmul_stage4
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity FPnormalize
+# -- Loading entity PackFP
+# End time: 16:57:13 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:13 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_pipeline.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul
+# -- Compiling architecture pipeline of FPmul
+# -- Loading entity FPmul_stage1
+# -- Loading entity FPmul_stage2
+# -- Loading entity FPmul_stage3
+# -- Loading entity FPmul_stage4
+# End time: 16:57:13 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:57:14 on Mar 12,2021
+# vlog -reportprogress 300 -sv ../tb_FPU/top_FPU_2fifo.sv 
+# ** Note: (vlog-2286) ../tb_FPU/top_FPU_2fifo.sv(2): Using implicit +incdir+/software/mentor/questa10.7c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_FPU_2fifo_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Warning: ../tb_FPU/monitor.sv(49): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# ** Warning: ../tb_FPU/monitor_out.sv(48): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# -- Compiling interface dut_if
+# -- Compiling module DUT
+# -- Compiling module top_FPU
+# 
+# Top level modules:
+# 	top_FPU
+# End time: 16:57:17 on Mar 12,2021, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 2
+# vsim top_FPU 
+# Start time: 16:56:00 on Mar 12,2021
+# ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: ../tb_FPU/monitor.sv(49): (vopt-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
 # ** Warning: ../tb_FPU/monitor_out.sv(48): (vopt-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
 # Loading sv_std.std
 # Loading mtiUvm.uvm_pkg
-# Loading work.top_FPU_sv_unit(fast)
+# Loading work.top_FPU_2fifo_sv_unit(fast)
 # Loading work.top_FPU(fast)
 # Loading work.DUT(fast)
 # Loading mtiUvm.questa_uvm_pkg(fast)
@@ -195,13 +508,7 @@ do top_FPU.do
 # ** Warning: (vsim-3839) Variable '/top_FPU/out/data', driven via a port connection, is multiply driven. See ../src/DUT_FPU.sv(3).
 #    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum File: ../src/DUT_FPU.sv Line: 9
 # ** Warning: (vsim-3764) Stand-alone call to function 'begin_tr' treated as implicit void cast.
-#    Time: 0 ns  Iteration: 0  Region: /top_FPU_sv_unit::driver File: ../tb_FPU/driver.sv Line: 67
-# ** Warning: (vsim-3764) Stand-alone call to function 'try_put' treated as implicit void cast.
-#    Time: 0 ns  Iteration: 0  Region: /top_FPU_sv_unit::comparator #(top_FPU_sv_unit::packet_out) File: ../tb_FPU/comparator_fifo_internal.sv Line: 89
-# ** Warning: (vsim-3764) Stand-alone call to function 'try_put' treated as implicit void cast.
-#    Time: 0 ns  Iteration: 0  Region: /top_FPU_sv_unit::comparator #(top_FPU_sv_unit::packet_out) File: ../tb_FPU/comparator_fifo_internal.sv Line: 98
-# ** Warning: (vsim-3764) Stand-alone call to function 'try_put' treated as implicit void cast.
-#    Time: 0 ns  Iteration: 0  Region: /top_FPU_sv_unit::comparator #(top_FPU_sv_unit::packet_out) File: ../tb_FPU/comparator_fifo_internal.sv Line: 127
+#    Time: 0 ns  Iteration: 0  Region: /top_FPU_2fifo_sv_unit::driver File: ../tb_FPU/driver.sv Line: 67
 # Loading /software/mentor/questa10.7c/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
 # ----------------------------------------------------------------
 # UVM-1.1d
@@ -252,8 +559,7 @@ do top_FPU.do
 #    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
-# batman
-# UVM_INFO ../tb_FPU/env.sv(42) @ 0: uvm_test_top.env_h [env] Reporting matched 0
+# UVM_INFO ../tb_FPU/env_2fifo.sv(42) @ 0: uvm_test_top.env_h [env] Reporting matched 0
 # 
 # --- UVM Report Summary ---
 # 
@@ -269,9 +575,9 @@ do top_FPU.do
 # ** Note: $finish    : /software/mentor/questa10.7c/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 0 ns  Iteration: 216  Instance: /top_FPU
 # Break in Task uvm_pkg/uvm_root::run_test at /software/mentor/questa10.7c/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
-do top_FPU.do
+do top_FPU_2fifo.do
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:06 on Mar 11,2021
+# Start time: 17:05:48 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/common/fpnormalize_fpnormalize.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -280,10 +586,10 @@ do top_FPU.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity FPnormalize
 # -- Compiling architecture FPnormalize of FPnormalize
-# End time: 18:51:07 on Mar 11,2021, Elapsed time: 0:00:01
+# End time: 17:05:49 on Mar 12,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:07 on Mar 11,2021
+# Start time: 17:05:49 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/common/fpround_fpround.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -292,10 +598,10 @@ do top_FPU.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity FPround
 # -- Compiling architecture FPround of FPround
-# End time: 18:51:07 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 17:05:49 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:07 on Mar 11,2021
+# Start time: 17:05:49 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/common/packfp_packfp.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -303,10 +609,10 @@ do top_FPU.do
 # -- Loading package std_logic_arith
 # -- Compiling entity PackFP
 # -- Compiling architecture PackFP of PackFP
-# End time: 18:51:07 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 17:05:50 on Mar 12,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:07 on Mar 11,2021
+# Start time: 17:05:50 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/common/unpackfp_unpackfp.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -314,10 +620,10 @@ do top_FPU.do
 # -- Loading package std_logic_arith
 # -- Compiling entity UnpackFP
 # -- Compiling architecture UnpackFP of UnpackFP
-# End time: 18:51:07 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 17:05:50 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:08 on Mar 11,2021
+# Start time: 17:05:50 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/common/clk_gen.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -326,10 +632,10 @@ do top_FPU.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity clk_gen
 # -- Compiling architecture beh of clk_gen
-# End time: 18:51:08 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 17:05:51 on Mar 12,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:08 on Mar 11,2021
+# Start time: 17:05:51 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/regnbit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -337,10 +643,10 @@ do top_FPU.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity regnbit
 # -- Compiling architecture behaviour of regnbit
-# End time: 18:51:08 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 17:05:51 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:08 on Mar 11,2021
+# Start time: 17:05:51 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage1_struct.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -349,10 +655,10 @@ do top_FPU.do
 # -- Compiling entity FPmul_stage1
 # -- Compiling architecture struct of FPmul_stage1
 # -- Loading entity UnpackFP
-# End time: 18:51:08 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 17:05:51 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:08 on Mar 11,2021
+# Start time: 17:05:52 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage2_struct_modified_extra_regs.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -360,10 +666,10 @@ do top_FPU.do
 # -- Loading package std_logic_arith
 # -- Compiling entity FPmul_stage2
 # -- Compiling architecture struct of FPmul_stage2
-# End time: 18:51:08 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 17:05:52 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:08 on Mar 11,2021
+# Start time: 17:05:52 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage3_struct.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -374,10 +680,10 @@ do top_FPU.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Loading entity FPnormalize
 # -- Loading entity FPround
-# End time: 18:51:09 on Mar 11,2021, Elapsed time: 0:00:01
+# End time: 17:05:52 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:09 on Mar 11,2021
+# Start time: 17:05:53 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage4_struct.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -388,10 +694,10 @@ do top_FPU.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Loading entity FPnormalize
 # -- Loading entity PackFP
-# End time: 18:51:09 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 17:05:53 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:09 on Mar 11,2021
+# Start time: 17:05:53 on Mar 12,2021
 # vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_pipeline.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -403,14 +709,13 @@ do top_FPU.do
 # -- Loading entity FPmul_stage2
 # -- Loading entity FPmul_stage3
 # -- Loading entity FPmul_stage4
-# End time: 18:51:09 on Mar 11,2021, Elapsed time: 0:00:00
+# End time: 17:05:53 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
-# Start time: 18:51:09 on Mar 11,2021
-# vlog -reportprogress 300 -sv ../tb_FPU/top_FPU.sv 
-# ** Note: (vlog-2286) ../tb_FPU/top_FPU.sv(2): Using implicit +incdir+/software/mentor/questa10.7c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
-# ** Warning: ../tb_FPU/top_FPU.sv(1): (vlog-13233) Design unit "top_FPU_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
-# -- Compiling package top_FPU_sv_unit
+# Start time: 17:05:53 on Mar 12,2021
+# vlog -reportprogress 300 -sv ../tb_FPU/top_FPU_2fifo.sv 
+# ** Note: (vlog-2286) ../tb_FPU/top_FPU_2fifo.sv(2): Using implicit +incdir+/software/mentor/questa10.7c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_FPU_2fifo_sv_unit
 # -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
 # ** Warning: ../tb_FPU/monitor.sv(49): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
 # ** Warning: ../tb_FPU/monitor_out.sv(48): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
@@ -420,18 +725,18 @@ do top_FPU.do
 # 
 # Top level modules:
 # 	top_FPU
-# End time: 18:51:11 on Mar 11,2021, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 3
-# End time: 18:51:14 on Mar 11,2021, Elapsed time: 0:10:53
-# Errors: 0, Warnings: 23
+# End time: 17:05:57 on Mar 12,2021, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 2
+# End time: 17:06:03 on Mar 12,2021, Elapsed time: 0:10:03
+# Errors: 2, Warnings: 19
 # vsim top_FPU 
-# Start time: 18:51:14 on Mar 11,2021
+# Start time: 17:06:03 on Mar 12,2021
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: ../tb_FPU/monitor.sv(49): (vopt-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
 # ** Warning: ../tb_FPU/monitor_out.sv(48): (vopt-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
 # Loading sv_std.std
 # Loading mtiUvm.uvm_pkg
-# Loading work.top_FPU_sv_unit(fast)
+# Loading work.top_FPU_2fifo_sv_unit(fast)
 # Loading work.top_FPU(fast)
 # Loading work.DUT(fast)
 # Loading mtiUvm.questa_uvm_pkg(fast)
@@ -454,7 +759,7 @@ do top_FPU.do
 # ** Warning: (vsim-3839) Variable '/top_FPU/out/data', driven via a port connection, is multiply driven. See ../src/DUT_FPU.sv(3).
 #    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum File: ../src/DUT_FPU.sv Line: 9
 # ** Warning: (vsim-3764) Stand-alone call to function 'begin_tr' treated as implicit void cast.
-#    Time: 0 ns  Iteration: 0  Region: /top_FPU_sv_unit::driver File: ../tb_FPU/driver.sv Line: 67
+#    Time: 0 ns  Iteration: 0  Region: /top_FPU_2fifo_sv_unit::driver File: ../tb_FPU/driver.sv Line: 67
 # Loading /software/mentor/questa10.7c/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
 # ----------------------------------------------------------------
 # UVM-1.1d
@@ -505,7 +810,659 @@ do top_FPU.do
 #    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
-# UVM_INFO ../tb_FPU/env_fifo.sv(46) @ 0: uvm_test_top.env_h [env] Reporting matched 0
+# UVM_INFO ../tb_FPU/env_2fifo.sv(42) @ 0: uvm_test_top.env_h [env] Reporting matched 0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [env]     1
+# ** Note: $finish    : /software/mentor/questa10.7c/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 216  Instance: /top_FPU
+# Break in Task uvm_pkg/uvm_root::run_test at /software/mentor/questa10.7c/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+do top_FPU_2fifo.do
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:25 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/fpnormalize_fpnormalize.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPnormalize
+# -- Compiling architecture FPnormalize of FPnormalize
+# End time: 17:11:25 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:26 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/fpround_fpround.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPround
+# -- Compiling architecture FPround of FPround
+# End time: 17:11:26 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:26 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/packfp_packfp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity PackFP
+# -- Compiling architecture PackFP of PackFP
+# End time: 17:11:26 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:26 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/unpackfp_unpackfp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity UnpackFP
+# -- Compiling architecture UnpackFP of UnpackFP
+# End time: 17:11:27 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:27 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/clk_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity clk_gen
+# -- Compiling architecture beh of clk_gen
+# End time: 17:11:27 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:27 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/regnbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity regnbit
+# -- Compiling architecture behaviour of regnbit
+# End time: 17:11:28 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:28 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage1_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage1
+# -- Compiling architecture struct of FPmul_stage1
+# -- Loading entity UnpackFP
+# End time: 17:11:28 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:28 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage2_struct_modified_extra_regs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage2
+# -- Compiling architecture struct of FPmul_stage2
+# End time: 17:11:28 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:29 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage3_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage3
+# -- Compiling architecture struct of FPmul_stage3
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity FPnormalize
+# -- Loading entity FPround
+# End time: 17:11:29 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:29 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage4_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage4
+# -- Compiling architecture struct of FPmul_stage4
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity FPnormalize
+# -- Loading entity PackFP
+# End time: 17:11:29 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:29 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_pipeline.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul
+# -- Compiling architecture pipeline of FPmul
+# -- Loading entity FPmul_stage1
+# -- Loading entity FPmul_stage2
+# -- Loading entity FPmul_stage3
+# -- Loading entity FPmul_stage4
+# End time: 17:11:30 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:11:30 on Mar 12,2021
+# vlog -reportprogress 300 -sv ../tb_FPU/top_FPU_2fifo.sv 
+# ** Note: (vlog-2286) ../tb_FPU/top_FPU_2fifo.sv(2): Using implicit +incdir+/software/mentor/questa10.7c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_FPU_2fifo_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Warning: ../tb_FPU/monitor.sv(49): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# ** Warning: ../tb_FPU/monitor_out.sv(48): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# -- Compiling interface dut_if
+# -- Compiling module DUT
+# -- Compiling module top_FPU
+# 
+# Top level modules:
+# 	top_FPU
+# End time: 17:11:34 on Mar 12,2021, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 2
+# End time: 17:11:39 on Mar 12,2021, Elapsed time: 0:05:36
+# Errors: 0, Warnings: 19
+# vsim top_FPU 
+# Start time: 17:11:39 on Mar 12,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ../tb_FPU/monitor.sv(49): (vopt-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# ** Warning: ../tb_FPU/monitor_out.sv(48): (vopt-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_FPU_2fifo_sv_unit(fast)
+# Loading work.top_FPU(fast)
+# Loading work.DUT(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.dut_if(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fpmul(pipeline)#1
+# Loading work.fpmul_stage1(struct)#1
+# Loading work.unpackfp(unpackfp)#1
+# Loading work.fpmul_stage2(struct)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.fpmul_stage3(struct)#1
+# Loading work.fpnormalize(fpnormalize)#1
+# Loading work.fpround(fpround)#1
+# Loading work.fpmul_stage4(struct)#1
+# Loading work.packfp(packfp)#1
+# ** Warning: (vsim-3839) Variable '/top_FPU/out/data', driven via a port connection, is multiply driven. See ../src/DUT_FPU.sv(3).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum File: ../src/DUT_FPU.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'begin_tr' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_FPU_2fifo_sv_unit::driver File: ../tb_FPU/driver.sv Line: 67
+# Loading /software/mentor/questa10.7c/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I3/I11
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I3/I11
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# UVM_INFO @ 0: reporter [RNTST] Running test simple_test...
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
+# UVM_INFO ../tb_FPU/env_2fifo.sv(42) @ 0: uvm_test_top.env_h [env] Reporting matched 0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [env]     1
+# ** Note: $finish    : /software/mentor/questa10.7c/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 216  Instance: /top_FPU
+# Break in Task uvm_pkg/uvm_root::run_test at /software/mentor/questa10.7c/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+do top_FPU_2fifo.do
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:18 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/fpnormalize_fpnormalize.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPnormalize
+# -- Compiling architecture FPnormalize of FPnormalize
+# End time: 17:16:18 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:18 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/fpround_fpround.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPround
+# -- Compiling architecture FPround of FPround
+# End time: 17:16:19 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:19 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/packfp_packfp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity PackFP
+# -- Compiling architecture PackFP of PackFP
+# End time: 17:16:19 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:20 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/unpackfp_unpackfp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity UnpackFP
+# -- Compiling architecture UnpackFP of UnpackFP
+# End time: 17:16:20 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:20 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/clk_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity clk_gen
+# -- Compiling architecture beh of clk_gen
+# End time: 17:16:20 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:20 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/regnbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity regnbit
+# -- Compiling architecture behaviour of regnbit
+# End time: 17:16:21 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:21 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage1_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage1
+# -- Compiling architecture struct of FPmul_stage1
+# -- Loading entity UnpackFP
+# End time: 17:16:21 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:21 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage2_struct_modified_extra_regs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage2
+# -- Compiling architecture struct of FPmul_stage2
+# End time: 17:16:22 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:22 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage3_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage3
+# -- Compiling architecture struct of FPmul_stage3
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity FPnormalize
+# -- Loading entity FPround
+# End time: 17:16:22 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:22 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage4_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage4
+# -- Compiling architecture struct of FPmul_stage4
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity FPnormalize
+# -- Loading entity PackFP
+# End time: 17:16:23 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:23 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_pipeline.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul
+# -- Compiling architecture pipeline of FPmul
+# -- Loading entity FPmul_stage1
+# -- Loading entity FPmul_stage2
+# -- Loading entity FPmul_stage3
+# -- Loading entity FPmul_stage4
+# End time: 17:16:23 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:16:23 on Mar 12,2021
+# vlog -reportprogress 300 -sv ../tb_FPU/top_FPU_2fifo.sv 
+# ** Note: (vlog-2286) ../tb_FPU/top_FPU_2fifo.sv(2): Using implicit +incdir+/software/mentor/questa10.7c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# ** Error: (vlog-13069) ** while parsing file included at ../tb_FPU/top_FPU_2fifo.sv(17)
+# ** at ../tb_FPU/comparator_2fifo.sv(55): near ";": syntax error, unexpected ';', expecting ')' or ','.
+# End time: 17:16:25 on Mar 12,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0
+# ** Error: /software/mentor/questa10.7c/questasim/linux_x86_64/vlog failed.
+# Error in macro ./top_FPU_2fifo.do line 15
+# /software/mentor/questa10.7c/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv ../tb_FPU/top_FPU_2fifo.sv"
+do top_FPU_2fifo.do
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:30 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/fpnormalize_fpnormalize.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPnormalize
+# -- Compiling architecture FPnormalize of FPnormalize
+# End time: 17:17:31 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:31 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/fpround_fpround.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FPround
+# -- Compiling architecture FPround of FPround
+# End time: 17:17:31 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:31 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/packfp_packfp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity PackFP
+# -- Compiling architecture PackFP of PackFP
+# End time: 17:17:32 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:32 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/unpackfp_unpackfp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity UnpackFP
+# -- Compiling architecture UnpackFP of UnpackFP
+# End time: 17:17:32 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:32 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/common/clk_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity clk_gen
+# -- Compiling architecture beh of clk_gen
+# End time: 17:17:32 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:32 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/regnbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity regnbit
+# -- Compiling architecture behaviour of regnbit
+# End time: 17:17:33 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:33 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage1_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage1
+# -- Compiling architecture struct of FPmul_stage1
+# -- Loading entity UnpackFP
+# End time: 17:17:33 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:33 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage2_struct_modified_extra_regs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage2
+# -- Compiling architecture struct of FPmul_stage2
+# End time: 17:17:34 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:34 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage3_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage3
+# -- Compiling architecture struct of FPmul_stage3
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity FPnormalize
+# -- Loading entity FPround
+# End time: 17:17:34 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:34 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_stage4_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul_stage4
+# -- Compiling architecture struct of FPmul_stage4
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity FPnormalize
+# -- Loading entity PackFP
+# End time: 17:17:35 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:35 on Mar 12,2021
+# vcom -reportprogress 300 -93 ../src_FPU/multiplier/fpmul_pipeline.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity FPmul
+# -- Compiling architecture pipeline of FPmul
+# -- Loading entity FPmul_stage1
+# -- Loading entity FPmul_stage2
+# -- Loading entity FPmul_stage3
+# -- Loading entity FPmul_stage4
+# End time: 17:17:35 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 17:17:35 on Mar 12,2021
+# vlog -reportprogress 300 -sv ../tb_FPU/top_FPU_2fifo.sv 
+# ** Note: (vlog-2286) ../tb_FPU/top_FPU_2fifo.sv(2): Using implicit +incdir+/software/mentor/questa10.7c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_FPU_2fifo_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Warning: ../tb_FPU/monitor.sv(49): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# ** Warning: ../tb_FPU/monitor_out.sv(48): (vlog-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# -- Compiling interface dut_if
+# -- Compiling module DUT
+# -- Compiling module top_FPU
+# 
+# Top level modules:
+# 	top_FPU
+# End time: 17:17:39 on Mar 12,2021, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 2
+# End time: 17:17:46 on Mar 12,2021, Elapsed time: 0:06:07
+# Errors: 4, Warnings: 19
+# vsim top_FPU 
+# Start time: 17:17:46 on Mar 12,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ../tb_FPU/monitor.sv(49): (vopt-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# ** Warning: ../tb_FPU/monitor_out.sv(48): (vopt-2240) Treating stand-alone use of function 'begin_tr' as an implicit VOID cast.
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_FPU_2fifo_sv_unit(fast)
+# Loading work.top_FPU(fast)
+# Loading work.DUT(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.dut_if(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fpmul(pipeline)#1
+# Loading work.fpmul_stage1(struct)#1
+# Loading work.unpackfp(unpackfp)#1
+# Loading work.fpmul_stage2(struct)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.fpmul_stage3(struct)#1
+# Loading work.fpnormalize(fpnormalize)#1
+# Loading work.fpround(fpround)#1
+# Loading work.fpmul_stage4(struct)#1
+# Loading work.packfp(packfp)#1
+# ** Warning: (vsim-3839) Variable '/top_FPU/out/data', driven via a port connection, is multiply driven. See ../src/DUT_FPU.sv(3).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum File: ../src/DUT_FPU.sv Line: 9
+# ** Warning: (vsim-3764) Stand-alone call to function 'begin_tr' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_FPU_2fifo_sv_unit::driver File: ../tb_FPU/driver.sv Line: 67
+# Loading /software/mentor/questa10.7c/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I3/I11
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I3/I11
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /top_FPU/sum/FPU_under_test/I2
+# UVM_INFO @ 0: reporter [RNTST] Running test simple_test...
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /top_FPU/sum/FPU_under_test/I2
+# before get_peek
+# UVM_INFO ../tb_FPU/env_2fifo.sv(42) @ 0: uvm_test_top.env_h [env] Reporting matched 0
 # 
 # --- UVM Report Summary ---
 # 
