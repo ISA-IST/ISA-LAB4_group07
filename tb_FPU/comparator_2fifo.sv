@@ -48,7 +48,10 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
 
     super.run_phase(phase);
       forever begin
+			$display("before get_peek");
           expected_refmod_fifo.get_peek_export.get(before_tx);
+		  phase.raise_objection(this);
+			$display("after get_peek");
           actual_DUT_fifo.get_peek_export.get(after_tx);
 
         if( !after_tx.compare(before_tx) ) begin
@@ -61,16 +64,20 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
          end
 
      end
+		
+    if(m_matches+m_mismatches > 100)
+      -> end_of_simulation;
+	
+	-> compared;
+	
 
-
-
-  /*  phase.raise_objection(this);
+    
     @(end_of_simulation);
     phase.drop_objection(this);
-    */
+    
   endtask
 
-/*  virtual task put(T t);
+  virtual task put(T t);
     if(!free) @compared;
     exp.copy(t);
     free = 0;
@@ -96,19 +103,16 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
     if (free)
       uvm_report_fatal("No expect transaction to compare with", "");
 
-    if(!(exp.compare(rec))) begin
+ /*   if(!(exp.compare(rec))) begin
       uvm_report_warning("Comparator Mismatch", "");
       m_mismatches++;
     end
     else begin
       uvm_report_info("Comparator Match", "");
       m_matches++;
-    end
+    end */
 
-    if(m_matches+m_mismatches > 100)
-      -> end_of_simulation;
 
-    -> compared;
   endfunction
-  */
+ 
 endclass
