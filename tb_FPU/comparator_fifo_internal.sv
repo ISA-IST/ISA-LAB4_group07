@@ -86,7 +86,7 @@ endtask
 
  virtual task put(T t);
     if(!free) @compared; // '@' triggera l'azione quando compared cambia, credo come '@' posedge.
-    before_fifo.try_put(t);
+    before_fifo.write(t);
     free = 0;
 
     @compared;
@@ -95,7 +95,7 @@ endtask
 
   virtual function bit try_put(T t);
     if(free) begin
-      before_fifo.try_put(t);
+      before_fifo.write(t);
       free = 0;
       return 1;
     end
@@ -124,6 +124,6 @@ endtask
 
     -> compared;*/
 
-	after_fifo.try_put(rec);
+	after_fifo.write(rec);
   endfunction
 endclass
