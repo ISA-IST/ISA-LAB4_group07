@@ -7,6 +7,7 @@ class comparator #(type T = packet_out) extends uvm_scoreboard; // creazione di 
   uvm_put_imp #(T, this_type) from_refmod;
   uvm_analysis_imp #(T, this_type) from_dut;
 
+
   typedef uvm_built_in_converter #( T ) convert;
 
   int m_matches, m_mismatches;
@@ -18,6 +19,7 @@ class comparator #(type T = packet_out) extends uvm_scoreboard; // creazione di 
     super.new(name, parent);
     from_refmod = new("from_refmod", this);
     from_dut = new("from_dut", this);
+
     m_matches = 0;
     m_mismatches = 0;
     exp = new("exp");
@@ -28,13 +30,15 @@ class comparator #(type T = packet_out) extends uvm_scoreboard; // creazione di 
     return type_name;
   endfunction
 
-  task run_phase(uvm_phase phase);
+  task run_phase(uvm_phase phase);  // original run_phase
     phase.raise_objection(this);
     @(end_of_simulation);
     phase.drop_objection(this);
   endtask
 
-  virtual task put(T t);
+
+
+virtual task put(T t);
     if(!free) @compared; // '@' triggera l'azione quando compared cambia, credo come '@' posedge.
     exp.copy(t);
     free = 0;
@@ -56,8 +60,9 @@ class comparator #(type T = packet_out) extends uvm_scoreboard; // creazione di 
     return free;
   endfunction
 
+
   virtual function void write(T rec);
-    if (free)
+  if (free)
       uvm_report_fatal("No expect transaction to compare with", "");
 
     if(!(exp.compare(rec))) begin
@@ -73,5 +78,6 @@ class comparator #(type T = packet_out) extends uvm_scoreboard; // creazione di 
       -> end_of_simulation;
 
     -> compared;
+
   endfunction
 endclass
