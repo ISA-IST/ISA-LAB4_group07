@@ -102,7 +102,11 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
     return free;
   endfunction */
 
+<<<<<<< HEAD
  /*  virtual function void write(T rec);
+=======
+/*  virtual function void write(T rec);
+>>>>>>> e56c6a262df6d385cb3e7761b8cf474670bf0522
     if (free)
       uvm_report_fatal("No expect transaction to compare with", "");
 
