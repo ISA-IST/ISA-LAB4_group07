@@ -52,10 +52,10 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
       forever begin
 	
 			
-          expected_refmod_fifo.get(before_tx);
+          expected_refmod_fifo.get_peek_export.get(before_tx);
 		  phase.raise_objection(this);
 			
-          actual_DUT_fifo.get(after_tx);
+          actual_DUT_fifo.get_peek_export.get(after_tx);
 
         if( !after_tx.compare(before_tx) ) begin
            uvm_report_warning("Comparator Mismatch", "");
@@ -102,11 +102,10 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
     return free;
   endfunction */
 
-<<<<<<< HEAD
- /*  virtual function void write(T rec);
-=======
+
+
 /*  virtual function void write(T rec);
->>>>>>> e56c6a262df6d385cb3e7761b8cf474670bf0522
+
     if (free)
       uvm_report_fatal("No expect transaction to compare with", "");
 
