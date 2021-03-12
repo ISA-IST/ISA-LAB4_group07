@@ -48,11 +48,12 @@ task run_phase(uvm_phase phase);     // new run_phase
  packet_out after_tx;
 
  forever begin
+ phase.raise_objection(this);
 $display("before_get");
  before_fifo.get(before_tx);
 //‘uvm_info("before_fifo", $sformatf("RES=%0h", before_tx.data), UVM_MEDIUM);
 $display("before_fifo");
- phase.raise_objection(this);
+
 
 $display("obj");
 
