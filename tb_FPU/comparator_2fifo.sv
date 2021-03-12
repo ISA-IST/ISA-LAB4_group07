@@ -22,7 +22,7 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
   function new(string name, uvm_component parent);
     super.new(name, parent);
     expected_analysis_export = new( "expected_analysis_export", this );
-    actual_analysis_export = new(   "actual_analysis_export", this );
+    actual_analysis_export = new( "actual_analysis_export", this );
     expected_refmod_fifo = new( "expected_refmod_fifo", this );
     actual_DUT_fifo = new(   "actual_DUT_fifo", this );
     m_matches = 0;
@@ -43,16 +43,19 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
   endfunction
 
   task run_phase(uvm_phase phase);
+	
     packet_out before_tx;
     packet_out after_tx;
 
     super.run_phase(phase);
+	phase.raise_objection(this);
       forever begin
-			$display("before get_peek");
-          expected_refmod_fifo.get_peek_export.get(before_tx);
+	
+			
+          expected_refmod_fifo.get(before_tx);
 		  phase.raise_objection(this);
-			$display("after get_peek");
-          actual_DUT_fifo.get_peek_export.get(after_tx);
+			
+          actual_DUT_fifo.get(after_tx);
 
         if( !after_tx.compare(before_tx) ) begin
            uvm_report_warning("Comparator Mismatch", "");
@@ -62,7 +65,7 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
            uvm_report_info("Comparator Match", "");
            m_matches++;
          end
-
+	phase.raise_objection(this);
      end
 		
     if(m_matches+m_mismatches > 100)
@@ -77,7 +80,7 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
     
   endtask
 
-  virtual task put(T t);
+ /* virtual task put(T t);
     if(!free) @compared;
     exp.copy(t);
     free = 0;
@@ -97,22 +100,22 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
 
   virtual function bit can_put();
     return free;
-  endfunction
+  endfunction */
 
-  virtual function void write(T rec);
+ /*  virtual function void write(T rec);
     if (free)
       uvm_report_fatal("No expect transaction to compare with", "");
 
- /*   if(!(exp.compare(rec))) begin
+   if(!(exp.compare(rec))) begin
       uvm_report_warning("Comparator Mismatch", "");
       m_mismatches++;
     end
     else begin
       uvm_report_info("Comparator Match", "");
       m_matches++;
-    end */
+    end 
 
 
-  endfunction
+  endfunction */
  
 endclass

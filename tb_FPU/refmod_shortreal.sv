@@ -4,7 +4,7 @@ class refmod extends uvm_component;
     packet_in tr_in;
     packet_out tr_out;
     uvm_get_port #(packet_in) in;
-    uvm_put_port #(packet_out) out;
+    uvm_analysis_port #(packet_out) out;
     shortreal A_tmp,B_tmp,OUT_tmp;
 
     function new(string name = "refmod", uvm_component parent);
@@ -31,7 +31,7 @@ class refmod extends uvm_component;
             $display("refmod: input A = %d, input B = %d, output OUT = %d",tr_in.A, tr_in.B, tr_out.data);
             //$display("refmod: input A = %f, input B = %f, output OUT = %f",A_tmp, B_tmp, OUT_tmp);
             $display("refmod: input A = %b, input B = %b, output OUT = %b",tr_in.A, tr_in.B, tr_out.data);
-            out.put(tr_out);
+            out.write(tr_out);
         end
     endtask: run_phase
 endclass: refmod
