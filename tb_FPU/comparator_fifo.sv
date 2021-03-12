@@ -7,8 +7,8 @@ class comparator #(type T = packet_out) extends uvm_scoreboard; // creazione di 
 //  uvm_put_imp #(T, this_type) from_refmod;
 //  uvm_analysis_imp #(T, this_type) from_dut;
 
-  uvm_tlm_analysis_fifo #(packet_out) before_fifo;
-  uvm_tlm_analysis_fifo #(packet_out) after_fifo;
+  uvm_tlm_analysis_fifo #(T) before_fifo;
+  uvm_tlm_analysis_fifo #(T) after_fifo;
 
   //alternativa
   //  uvm_tlm_analysis_fifo #(packet_out) before_fifo;
@@ -48,7 +48,7 @@ task run_phase(uvm_phase phase);     // new run_phase
  packet_out after_tx;
 
  forever begin
-
+$display("before_get");
  before_fifo.get(before_tx);
 //‘uvm_info("before_fifo", $sformatf("RES=%0h", before_tx.data), UVM_MEDIUM);
 $display("before_fifo");
@@ -84,7 +84,7 @@ end
 endtask
 
 
-/*  virtual task put(T t);
+/* virtual task put(T t);
     if(!free) @compared; // '@' triggera l'azione quando compared cambia, credo come '@' posedge.
     exp.copy(t);
     free = 0;
@@ -105,9 +105,10 @@ endtask
   virtual function bit can_put();
     return free;
   endfunction
+  */
 
   virtual function void write(T rec);
-    if (free)
+  /*  if (free)
       uvm_report_fatal("No expect transaction to compare with", "");
 
     if(!(exp.compare(rec))) begin
@@ -123,5 +124,6 @@ endtask
       -> end_of_simulation;
 
     -> compared;
-  endfunction */
+    */
+  endfunction
 endclass
