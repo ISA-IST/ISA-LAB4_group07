@@ -4,7 +4,7 @@ class env extends uvm_env;
     agent_out   slv;
     comparator #(packet_out) comp;
     uvm_tlm_analysis_fifo #(packet_in) to_refmod;
-    uvm_tlm_fifo #(packet_in) fifo;
+    uvm_tlm_fifo #(packet_out) fifo;
     `uvm_component_utils(env)
 
     function new(string name, uvm_component parent = null);
