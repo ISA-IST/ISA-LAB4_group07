@@ -70,7 +70,7 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
     */
   endtask
 
-/*  virtual task put(T t);
+  virtual task put(T t);
     if(!free) @compared;
     exp.copy(t);
     free = 0;
@@ -92,7 +92,7 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
     return free;
   endfunction
 
-  virtual function void write(T rec);
+/*  virtual function void write(T rec);
     if (free)
       uvm_report_fatal("No expect transaction to compare with", "");
 
