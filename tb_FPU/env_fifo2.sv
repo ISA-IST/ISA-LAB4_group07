@@ -18,7 +18,7 @@ class env extends uvm_env;
         slv = agent_out::type_id::create("slv", this);
         rfm = refmod::type_id::create("rfm", this);
         comp = comparator#(packet_out)::type_id::create("comp", this);
-        fifo = new(uvm_tlm_fifo, this, 4);
+        fifo = new("uvm_tlm_fifo", this, 4);
     endfunction
 
     virtual function void connect_phase(uvm_phase phase);

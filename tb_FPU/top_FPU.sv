@@ -13,7 +13,7 @@ import uvm_pkg::*;
 `include "../tb_FPU/monitor_out.sv"
 `include "../tb_FPU/agent.sv"
 `include "../tb_FPU/agent_out.sv"
-`include "../tb_FPU/refmod_fifo.sv"
+`include "../tb_FPU/refmod_shortreal.sv"
 `include "../tb_FPU/comparator_fifo.sv"
 `include "../tb_FPU/env_fifo.sv"
 //`include "../tb_FPU/refmod.sv"
