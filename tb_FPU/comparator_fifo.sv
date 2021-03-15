@@ -47,45 +47,51 @@ task run_phase(uvm_phase phase);     // new run_phase
  packet_out before_tx;
  packet_out after_tx;
 
+
+phase.raise_objection(this);
+
  forever begin
- phase.raise_objection(this);
-
- before_fifo.get(before_tx);
+ 	
+	
+	before_fifo.get(before_tx);
 //‘uvm_info("before_fifo", $sformatf("RES=%0h", before_tx.data), UVM_MEDIUM);
-
-
-
-
-
- after_fifo.get(after_tx);
+	phase.raise_objection(this);
+	after_fifo.get(after_tx);
 //‘uvm_info("after_fifo", $sformatf("RES=%0h", after_tx.data), UVM_MEDIUM);
 
 
 
 if( !after_tx.compare(before_tx) ) begin
- uvm_report_warning("Comparator Mismatch", "");
- m_mismatches++;
- end
- else begin
- uvm_report_info("Comparator Match", "");
- m_matches++;
- end
-
-if(m_matches+m_mismatches > 100) begin
-		$display("end");
-      -> end_of_simulation;
+ 	uvm_report_warning("Comparator Mismatch", "");
+ 	m_mismatches++;
+	$display("%d",m_mismatches);
+end
+else begin
+	$display("else");
+ 	uvm_report_info("Comparator Match", "");
+	m_matches++;
 end
 
-    -> compared;
+	phase.drop_objection(this);
 
- phase.drop_objection(this);
-
+if(m_matches+m_mismatches > 100) begin
+		//$display("end");
+//      -> end_of_simulation;
+		//phase.drop_objection(this);
+		break;
+end
+ 	
+	
  end // forever begin
+
+	//@(end_of_simulation);
+	phase.drop_objection(this);
+
 
 endtask
 
 
-/* virtual task put(T t);
+ /*virtual task put(T t);
     if(!free) @compared; // '@' triggera l'azione quando compared cambia, credo come '@' posedge.
     exp.copy(t);
     free = 0;
@@ -106,10 +112,10 @@ endtask
   virtual function bit can_put();
     return free;
   endfunction
-  */
+  
 
   virtual function void write(T rec);
-  /*  if (free)
+    if (free)
       uvm_report_fatal("No expect transaction to compare with", "");
 
     if(!(exp.compare(rec))) begin
@@ -125,6 +131,6 @@ endtask
       -> end_of_simulation;
 
     -> compared;
-    */
-  endfunction
+   
+  endfunction */
 endclass

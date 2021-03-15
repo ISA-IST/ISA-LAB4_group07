@@ -20,10 +20,15 @@ module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, 
                     if(in_inter.valid) begin
                         in_inter.ready <= 0;
                         //out_inter.data <= in_inter.A + in_inter.B;
-                        $display("MBE: input A = %d, input B = %d, output OUT = %d",in_inter.A,in_inter.B,out_inter.data);
-                        $display("MBE: input A = %b, input B = %b, output OUT = %b",in_inter.A,in_inter.B,out_inter.data);
-                        out_inter.valid <= 1;
+                        $display("[%0t] FPU: input A = %d, input B = %d", $time, in_inter.A,in_inter.B);
+						$display("[%0t] FPU: input A = %b, input B = %b", $time, in_inter.A,in_inter.B);
+                        #45 
+						out_inter.valid <= 1;
                         state <= SEND;
+ 						//$display("[%0t] FPU: input A = %d, input B = %d, output OUT = %d", $time, in_inter.A,in_inter.B,out_inter.data);
+                        //$display("[%0t] FPU: input A = %b, input B = %b, output OUT = %b",$time, in_inter.A,in_inter.B,out_inter.data);
+						$display("[%0t] FPU: output OUT = %d", $time, out_inter.data);
+                        $display("[%0t] FPU: output OUT = %b", $time, out_inter.data);
                     end
                 end
                 
