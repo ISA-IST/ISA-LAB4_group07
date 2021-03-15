@@ -77,6 +77,8 @@ end
 
     -> compared;
 
+
+ @(end_of_simulation);
  phase.drop_objection(this);
 
  end // forever begin

@@ -1,6 +1,5 @@
 import uvm_pkg::*;
 `include "uvm_macros.svh"
-//`include "../src/adder.sv"
 `include "../src/dut_if_FPU.sv"
 `include "../src/DUT_FPU.sv"
 `include "../tb_FPU/packet_in.sv"
@@ -15,9 +14,8 @@ import uvm_pkg::*;
 `include "../tb_FPU/agent_out.sv"
 `include "../tb_FPU/refmod_shortreal.sv"
 `include "../tb_FPU/comparator_fifo.sv"
-`include "../tb_FPU/env_fifo.sv"
-//`include "../tb_FPU/refmod.sv"
 //`include "../tb_FPU/comparator_fifo_internal.sv"
+`include "../tb_FPU/env_fifo.sv"
 //`include "../tb_FPU/env.sv"
 `include "../tb_FPU/simple_test.sv"
 
