@@ -2,6 +2,7 @@ import uvm_pkg::*;
 `include "uvm_macros.svh"
 `include "../src/dut_if_FPU.sv"
 `include "../src/DUT_FPU.sv"
+//`include "../src/DUT_FPU_regs.sv"
 `include "../tb_FPU/packet_in.sv"
 `include "../tb_FPU/packet_out.sv"
 `include "../tb_FPU/sequence_in.sv"
