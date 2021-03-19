@@ -34,7 +34,8 @@ class refmod extends uvm_component;
             //$display("refmod: input A = %f, input B = %f, output OUT = %f",A_tmp, B_tmp, OUT_tmp);
             $display("[%0t] refmod: input A = %b, input B = %b, output OUT = %b", $time, tr_in.A, tr_in.B, tr_out.data);
            
-			 out.write(tr_out);
+			tr_out.print();
+			out.write(tr_out);
         end
     endtask: run_phase
 endclass: refmod

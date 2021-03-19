@@ -44,44 +44,47 @@ class comparator #(type T = packet_out) extends uvm_scoreboard; // creazione di 
 //  endtask
 
 task run_phase(uvm_phase phase);     // new run_phase
- packet_out before_tx;
- packet_out after_tx;
-
- forever begin
-$display("before_get");
- before_fifo.get(before_tx);
-//‘uvm_info("before_fifo", $sformatf("RES=%0h", before_tx.data), UVM_MEDIUM);
-$display("before_fifo");
- phase.raise_objection(this);
-
-$display("obj");//questo non viene stampato
-
- after_fifo.get(after_tx);
-//‘uvm_info("after_fifo", $sformatf("RES=%0h", after_tx.data), UVM_MEDIUM);
-
-$display("after fifo");
-
-if( !after_tx.compare(before_tx) ) begin
- uvm_report_warning("Comparator Mismatch", "");
- m_mismatches++;
- end
- else begin
- uvm_report_info("Comparator Match", "");
- m_matches++;
- end
-
-if(m_matches+m_mismatches > 100) begin
-		$display("end");
-      -> end_of_simulation;
-end
-
-    -> compared;
+ 	packet_out before_tx;
+	packet_out after_tx;
 
 
- @(end_of_simulation);
- phase.drop_objection(this);
+	phase.raise_objection(this);
 
- end // forever begin
+ 	forever begin
+		after_fifo.get(after_tx);
+		//‘uvm_info("after_fifo", $sformatf("RES=%0b", after_tx.data), UVM_MEDIUM);
+		$display("RES_dut = %0b", after_tx.data);
+		before_fifo.get(before_tx);
+		//‘uvm_info("before_fifo", $sformatf("RES=%0b", before_tx.data), UVM_MEDIUM);
+		$display("RES_ref = %0b", before_tx.data);
+		phase.raise_objection(this);
+
+
+		if( !after_tx.compare(before_tx) ) begin
+		 	uvm_report_warning("Comparator Mismatch", "");
+		 	m_mismatches++;
+			$display("%d",m_mismatches);
+		end
+		else begin
+			$display("else");
+		 	uvm_report_info("Comparator Match", "");
+			m_matches++;
+		end
+
+		phase.drop_objection(this);
+
+		if(m_matches+m_mismatches > 100) begin
+				//$display("end");
+		//      -> end_of_simulation;
+				//phase.drop_objection(this);
+				break;
+		end
+	 	
+	
+	end // forever begin
+
+	//@(end_of_simulation);
+	phase.drop_objection(this);
 
 endtask
 

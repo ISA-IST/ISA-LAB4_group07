@@ -4,9 +4,6 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
 
   const static string type_name = "comparator #(T)";
 
-  //uvm_put_imp #(T, this_type) from_refmod;
-  //uvm_analysis_imp #(T, this_type) from_dut;
-
    uvm_analysis_export  #( T ) expected_analysis_export;
    uvm_analysis_export  #( T )   actual_analysis_export;
    uvm_tlm_analysis_fifo#( T ) expected_refmod_fifo;
@@ -48,77 +45,44 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
     packet_out after_tx;
 
     super.run_phase(phase);
-	phase.raise_objection(this);
-      forever begin
-	
-			
-          expected_refmod_fifo.get_peek_export.get(before_tx);
-		  phase.raise_objection(this);
-			
-          actual_DUT_fifo.get_peek_export.get(after_tx);
 
-        if( !after_tx.compare(before_tx) ) begin
-           uvm_report_warning("Comparator Mismatch", "");
-           m_mismatches++;
-         end
-         else begin
-           uvm_report_info("Comparator Match", "");
-           m_matches++;
-         end
 	phase.raise_objection(this);
-     end
+    forever begin
+				
+		// get item from refmod FIFO
+		expected_refmod_fifo.get_peek_export.get(before_tx);		
 		
-    if(m_matches+m_mismatches > 100)
-      -> end_of_simulation;
-	
-	-> compared;
-	
+		phase.raise_objection(this);
+		
+		// get item from DUT FIFO
+		actual_DUT_fifo.get_peek_export.get(after_tx);
 
-    
-    @(end_of_simulation);
+
+		$display("COMPARE BETWEEN:");
+		$display("RES_ref = %b", before_tx.data);
+		$display("RES_dut = %b", after_tx.data);
+			
+			
+		if( !after_tx.compare(before_tx) ) begin
+		   uvm_report_warning("Comparator Mismatch", "");
+		   m_mismatches++;
+		end
+		else begin
+		   uvm_report_info("Comparator Match", "");
+		   m_matches++;
+		end
+
+		phase.drop_objection(this);
+
+		
+		if(m_matches+m_mismatches > 100) begin
+			break;
+		end
+	end
+	
     phase.drop_objection(this);
     
   endtask
 
- /* virtual task put(T t);
-    if(!free) @compared;
-    exp.copy(t);
-    free = 0;
 
-    @compared;
-    free = 1;
-  endtask
-
-  virtual function bit try_put(T t);
-    if(free) begin
-      exp.copy(t);
-      free = 0;
-      return 1;
-    end
-    else return 0;
-  endfunction
-
-  virtual function bit can_put();
-    return free;
-  endfunction */
-
-
-
-/*  virtual function void write(T rec);
-
-    if (free)
-      uvm_report_fatal("No expect transaction to compare with", "");
-
-   if(!(exp.compare(rec))) begin
-      uvm_report_warning("Comparator Mismatch", "");
-      m_mismatches++;
-    end
-    else begin
-      uvm_report_info("Comparator Match", "");
-      m_matches++;
-    end 
-
-
-  endfunction */
- 
 endclass

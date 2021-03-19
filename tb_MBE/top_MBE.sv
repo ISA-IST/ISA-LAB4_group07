@@ -1,7 +1,7 @@
 import uvm_pkg::*;
 `include "uvm_macros.svh"
 //`include "../src/adder.sv"
-`include "../src/dut_if.sv"
+`include "../src/dut_if_MBE.sv"
 `include "../src/DUT_MBE.sv"
 `include "../tb_MBE/packet_in_MBE.sv"
 `include "../tb_MBE/packet_out_long.sv"

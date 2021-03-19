@@ -1,7 +1,6 @@
 import uvm_pkg::*;
 `include "uvm_macros.svh"
 `include "../src/dut_if_FPU.sv"
-//`include "../src/DUT_FPU.sv"
 `include "../src/DUT_FPU_regs.sv"
 `include "../tb_FPU/packet_in.sv"
 `include "../tb_FPU/packet_out.sv"
@@ -10,14 +9,13 @@ import uvm_pkg::*;
 `include "../tb_FPU/driver.sv"
 `include "../tb_FPU/driver_out.sv"
 `include "../tb_FPU/monitor.sv"
-`include "../tb_FPU/monitor_out.sv"
+//`include "../tb_FPU/monitor_out.sv"
+`include "../tb_FPU/monitor_out_create_obj.sv"
 `include "../tb_FPU/agent.sv"
 `include "../tb_FPU/agent_out.sv"
-`include "../tb_FPU/refmod_shortreal.sv"
-`include "../tb_FPU/comparator_fifo.sv"
-//`include "../tb_FPU/comparator_fifo_internal.sv"
-`include "../tb_FPU/env_fifo.sv"
-//`include "../tb_FPU/env.sv"
+`include "../tb_FPU/refmod_shortreal_FPU.sv"
+`include "../tb_FPU/comparator_FPU.sv"
+`include "../tb_FPU/env_FPU.sv"
 `include "../tb_FPU/simple_test.sv"
 
 //Top

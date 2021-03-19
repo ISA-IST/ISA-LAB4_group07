@@ -2,8 +2,8 @@ module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, 
     
     FPmul FPU_under_test(.FP_A(in_inter.A),.FP_B(in_inter.B),.CLK(clk),.FP_Z(out_inter.data));
 
-	shortreal A_tmp,B_tmp,OUT_tmp;
-	logic valid_tmp, valid_tmp_1, valid_tmp_2, valid_tmp_3, valid_tmp_4, valid_tmp_5, valid_tmp_6;
+	shortreal A_tmp, B_tmp, OUT_tmp;
+	logic valid_tmp;
 	reg [5:0] out;
 
     always_ff @(posedge in_inter.clk)
@@ -28,13 +28,13 @@ module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, 
 						// print A and B in decimal, binary and floating form
                         A_tmp = $bitstoshortreal({in_inter.A[31], in_inter.A[30:23], in_inter.A[22:0]});
             			B_tmp = $bitstoshortreal({in_inter.B[31], in_inter.B[30:23], in_inter.B[22:0]});
-						/*$display("[%0t] FPU: input A = %d, input B = %d", $time, in_inter.A,in_inter.B);
+						$display("[%0t] FPU: input A = %d, input B = %d", $time, in_inter.A,in_inter.B);
 						$display("[%0t] FPU: input A = %b, input B = %b", $time, in_inter.A,in_inter.B);
-			            $display("FPU: input A = %f, input B = %f",A_tmp, B_tmp);*/
+			            $display("FPU: input A = %f, input B = %f",A_tmp, B_tmp);
 		
 						//out_inter.valid <= 1;
 						valid_tmp <= 1;
-						$display("[%0t] START", $time, valid_tmp);
+						
                         state <= SEND;
  						
 						// print OUT in decimal, binary and floating form
@@ -58,47 +58,7 @@ module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, 
 
     end
 
-	/*always_ff @(posedge in_inter.clk)
-    	begin
-			valid_tmp_1 <= valid_tmp;
-			$display(valid_tmp);
-			$display(valid_tmp_1);
-	end
-
-	always_ff @(posedge in_inter.clk)
-    	begin
-			valid_tmp_2 <= valid_tmp_1;
-	end
-
-	always_ff @(posedge in_inter.clk)
-    	begin
-			valid_tmp_3 <= valid_tmp_2;
-	end
-
-	always_ff @(posedge in_inter.clk)
-    	begin
-			valid_tmp_4 <= valid_tmp_3;
-	end
-
- 	always_ff @(posedge in_inter.clk)
-    	begin
-			valid_tmp_5 <= valid_tmp_4;
-	end*/
-
-	/*always_ff @(posedge in_inter.clk)
-    	begin
-			valid_tmp_6 <= valid_tmp_5;
-	end*/
-
-	/*always_ff @(posedge in_inter.clk) begin
-			out_inter.valid <= valid_tmp_5;
-			if(out_inter.valid) begin
-				$display("[%0t] FPU: output OUT = %d", $time, out_inter.data);
-				$display("[%0t] FPU: output OUT = %b", $time, out_inter.data);
-			end
-			
-	end*/
-
+	// shift register to delay out_inter.valid signal
 
 	always @(posedge in_inter.clk) begin
 		if(in_inter.rst) begin
@@ -111,6 +71,12 @@ module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, 
 	
 	always_comb begin
 		out_inter.valid = out[0];
+		if(out_inter.valid) begin
+			$display("[%0t] FPU: output OUT = %d", $time, out_inter.data);
+            $display("[%0t] FPU: output OUT = %b", $time, out_inter.data);
+			OUT_tmp = $bitstoshortreal({out_inter.data[31], out_inter.data[30:23], out_inter.data[22:0]});
+			$display("FPU: output OUT = %f", OUT_tmp);
+		end
 	end
 
 endmodule: DUT
