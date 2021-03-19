@@ -53,13 +53,14 @@ phase.raise_objection(this);
  forever begin
  	
 	
-	before_fifo.get(before_tx);
-	//‘uvm_info("before_fifo", $sformatf("RES=%0b", before_tx.data), UVM_MEDIUM);
-	$display("RES=%0b", before_tx.data);
-	phase.raise_objection(this);
 	after_fifo.get(after_tx);
 	//‘uvm_info("after_fifo", $sformatf("RES=%0b", after_tx.data), UVM_MEDIUM);
-	$display("RES=%0b", after_tx.data);
+	$display("RES_dut = %0b", after_tx.data);
+	before_fifo.get(before_tx);
+	//‘uvm_info("before_fifo", $sformatf("RES=%0b", before_tx.data), UVM_MEDIUM);
+	$display("RES_ref = %0b", before_tx.data);
+	phase.raise_objection(this);
+	
 
 
 

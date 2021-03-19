@@ -4,13 +4,14 @@ module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, 
 
 	shortreal A_tmp,B_tmp,OUT_tmp;
 	logic valid_tmp, valid_tmp_1, valid_tmp_2, valid_tmp_3, valid_tmp_4, valid_tmp_5, valid_tmp_6;
+	reg [5:0] out;
 
     always_ff @(posedge in_inter.clk)
     begin
         if(in_inter.rst) begin
             in_inter.ready <= 0;
             //out_inter.data <= 'x;
-            out_inter.valid <= 0;
+            //out_inter.valid <= 0;
 			valid_tmp <= 0;
             state <= INITIAL;
         end
@@ -57,7 +58,7 @@ module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, 
 
     end
 
-	always_ff @(posedge in_inter.clk)
+	/*always_ff @(posedge in_inter.clk)
     	begin
 			valid_tmp_1 <= valid_tmp;
 			$display(valid_tmp);
@@ -82,19 +83,34 @@ module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, 
  	always_ff @(posedge in_inter.clk)
     	begin
 			valid_tmp_5 <= valid_tmp_4;
-	end
+	end*/
 
 	/*always_ff @(posedge in_inter.clk)
     	begin
 			valid_tmp_6 <= valid_tmp_5;
 	end*/
 
-	always_ff @(posedge in_inter.clk) begin
+	/*always_ff @(posedge in_inter.clk) begin
 			out_inter.valid <= valid_tmp_5;
 			if(out_inter.valid) begin
 				$display("[%0t] FPU: output OUT = %d", $time, out_inter.data);
 				$display("[%0t] FPU: output OUT = %b", $time, out_inter.data);
 			end
 			
+	end*/
+
+
+	always @(posedge in_inter.clk) begin
+		if(in_inter.rst) begin
+			out <= 0;
+		end
+		else begin
+			out <= {valid_tmp, out[5:1]};
+		end
 	end
+	
+	always_comb begin
+		out_inter.valid = out[0];
+	end
+
 endmodule: DUT
