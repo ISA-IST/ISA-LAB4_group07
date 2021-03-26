@@ -38,7 +38,7 @@ module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, 
                         state <= SEND;
  						
 						// print OUT in decimal, binary and floating form
-						/*$display("[%0t] FPU: output OUT = %d", $time, out_inter.data);
+						/*$display("[%0t] FPU: output OUT = %f", $time, out_inter.data);
                         $display("[%0t] FPU: output OUT = %b", $time, out_inter.data);
             			OUT_tmp = $bitstoshortreal({out_inter.data[31], out_inter.data[30:23], out_inter.data[22:0]});
             			$display("FPU: output OUT = %f", OUT_tmp);*/
