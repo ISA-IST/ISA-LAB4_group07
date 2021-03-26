@@ -33,7 +33,9 @@ class monitor_out extends uvm_monitor;
                 @(posedge vif.clk);
             end while (vif.valid === 0 || vif.ready === 0);
             -> begin_record;
-            
+
+			
+			// condition to filter out invalid data, the ones with all 'x'            
             if(vif.data !== 'x) begin
 				tr.data = vif.data;
             	item_collected_port.write(tr);

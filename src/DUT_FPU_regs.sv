@@ -32,16 +32,10 @@ module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, 
 						$display("[%0t] FPU: input A = %b, input B = %b", $time, in_inter.A,in_inter.B);
 			            $display("FPU: input A = %f, input B = %f",A_tmp, B_tmp);
 		
-						//out_inter.valid <= 1;
+						// assert valid_tmp going into shift register
 						valid_tmp <= 1;
 						
                         state <= SEND;
- 						
-						// print OUT in decimal, binary and floating form
-						/*$display("[%0t] FPU: output OUT = %f", $time, out_inter.data);
-                        $display("[%0t] FPU: output OUT = %b", $time, out_inter.data);
-            			OUT_tmp = $bitstoshortreal({out_inter.data[31], out_inter.data[30:23], out_inter.data[22:0]});
-            			$display("FPU: output OUT = %f", OUT_tmp);*/
                     end
                 end
                 
@@ -65,10 +59,13 @@ module DUT(dut_if.port_in in_inter, dut_if.port_out out_inter, input logic clk, 
 			out <= 0;
 		end
 		else begin
+			// shift bits
 			out <= {valid_tmp, out[5:1]};
 		end
 	end
 	
+	// connect out_inter.valid to last bit of shift register
+	// and print result of multiplication
 	always_comb begin
 		out_inter.valid = out[0];
 		if(out_inter.valid) begin

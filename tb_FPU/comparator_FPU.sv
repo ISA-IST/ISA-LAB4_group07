@@ -29,9 +29,10 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
   endfunction
 
   virtual function void connect_phase( uvm_phase phase );
-   super.connect_phase( phase );
-      expected_analysis_export.connect( expected_refmod_fifo.analysis_export );
-      actual_analysis_export.connect(   actual_DUT_fifo.analysis_export );
+	super.connect_phase( phase );
+	// connect ports receiving data to FIFOs in charge of storing it
+	expected_analysis_export.connect( expected_refmod_fifo.analysis_export );
+    actual_analysis_export.connect(   actual_DUT_fifo.analysis_export );
   endfunction: connect_phase
 
 
@@ -57,12 +58,14 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
 		// get item from DUT FIFO
 		actual_DUT_fifo.get_peek_export.get(after_tx);
 
-
+		
+		// print data to be compared
 		$display("COMPARE BETWEEN:");
 		$display("RES_ref = %b", before_tx.data);
 		$display("RES_dut = %b", after_tx.data);
 			
 			
+		// comparison
 		if( !after_tx.compare(before_tx) ) begin
 		   uvm_report_warning("Comparator Mismatch", "");
 		   m_mismatches++;
@@ -74,7 +77,7 @@ class comparator #(type T = packet_out) extends uvm_scoreboard;
 
 		phase.drop_objection(this);
 
-		
+		// loop exit condition
 		if(m_matches+m_mismatches > 100) begin
 			break;
 		end
