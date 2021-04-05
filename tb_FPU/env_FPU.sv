@@ -28,7 +28,7 @@ class env extends uvm_env;
         // Connect FIFO to REFMOD
         rfm.in.connect(to_refmod.get_export);
 
-        //Connect scoreboard
+        //Connect scoreboard, changed ports from standard file
         rfm.out.connect(comp.expected_analysis_export);
         slv.item_collected_port.connect(comp.actual_analysis_export);
     endfunction

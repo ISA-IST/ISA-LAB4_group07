@@ -23,22 +23,27 @@ class refmod extends uvm_component;
 
         forever begin
             in.get(tr_in);
+
+			// convert tr_in to shortreal inputs, A_tmp and B_tmp
             A_tmp = $bitstoshortreal({tr_in.A[31], tr_in.A[30:23], tr_in.A[22:0]});
             B_tmp = $bitstoshortreal({tr_in.B[31], tr_in.B[30:23], tr_in.B[22:0]});
+
+			// multiplication
             OUT_tmp = A_tmp * B_tmp;
-            // tr_out.data[31:0] $shortrealtobits(OUT_tmp) ;
 
 
 			// create new obj every time to store in fifo
 			tr_out = packet_out::type_id::create("tr_out", this);
 
+			// convert result to 32 bits storing it in tr_out.data
             {tr_out.data[31],tr_out.data[30:23],tr_out.data[22:0]} = $shortrealtobits(OUT_tmp);
 
-
+			// print inputs and result
             $display("[%0t] refmod: input A = %d, input B = %d, output OUT = %d", $time, tr_in.A, tr_in.B, tr_out.data);
             //$display("refmod: input A = %f, input B = %f, output OUT = %f",A_tmp, B_tmp, OUT_tmp);
             $display("[%0t] refmod: input A = %b, input B = %b, output OUT = %b", $time, tr_in.A, tr_in.B, tr_out.data);
            
+			// send out tr_out
 			out.write(tr_out);
         end
     endtask: run_phase
