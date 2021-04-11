@@ -33,7 +33,9 @@ class monitor_out extends uvm_monitor;
                 @(posedge vif.clk);
             end while (vif.valid === 0 || vif.ready === 0);
             -> begin_record;
-
+			
+			// create new obj every time to store in fifo
+			tr = packet_out::type_id::create("tr", this);
 			
 			// condition to filter out invalid data, the ones with all 'x'            
             if(vif.data !== 'x) begin
