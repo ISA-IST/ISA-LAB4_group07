@@ -4,7 +4,9 @@ class packet_in extends uvm_sequence_item;
 
 constraint my_constA { 
 						//A > 469762048; // originale
-						A == 469762048; // 4.2e-22
+						//A == 469762048; // 4.2e-22
+						A == 2683608740; // strange
+						//A == 528482344;
 						//A > 0 ; 
 						
 						//A > -1677721600;
@@ -12,8 +14,11 @@ constraint my_constA {
 						 }
 constraint my_constB {
 						//B > 469762048;
-						B < 636756992; //4.2e-16
-						B > 524812288; //4.2e-20
+
+						//B < 636756992; //4.2e-16
+						//B > 524812288; //4.2e-20
+						  B == 2683608740;
+						
 						//B > -1677721600; 
 						//B < 0; 
 						 }

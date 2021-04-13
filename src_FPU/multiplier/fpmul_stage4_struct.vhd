@@ -97,7 +97,8 @@ BEGIN
    -- Architecture concurrent statements
    -- HDL Embedded Text Block 1 trim
    -- trim 1 
-   SIG_out <= SIG_out_norm2(25 DOWNTO 3);
+   --SIG_out <= SIG_out_norm2(25 DOWNTO 3); --originale
+	 SIG_out <= SIG_out_norm2(26 DOWNTO 4) WHEN (EXP_out =X"00") ELSE SIG_out_norm2(25 DOWNTO 3) ;
 
    -- HDL Embedded Text Block 2 zero
    -- zero 2
